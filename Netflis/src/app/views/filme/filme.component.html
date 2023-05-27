@@ -1,0 +1,6 @@
+<button mat-button *ngIf="lista" (click)="listar()">lista</button>
+
+<div *ngFor="let cliente of listaFilmes">
+  <p>{{cliente.id}}</p>
+  <p>{{cliente.title_filme}}</p>
+</div>
