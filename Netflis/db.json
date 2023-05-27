@@ -1,5 +1,5 @@
 {
-  "filmes": [
+  "filme": [
     {
       "id": 1,
       "title_filme": "pokemon",
@@ -8,15 +8,5 @@
       "ano_filme": 1998,
       "descricao": " "
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

@@ -9,7 +9,7 @@ export class FilmeService {
 
   constructor(private http: HttpClient) { }
   listar(): Observable <Filme[]>{
-    return this.http.get<Filme[]>('http://localhost:3000/filmes');
+    return this.http.get<Filme[]>('http://localhost:3000/filme');
   }
   inserir(filme: Filme){
     return this.http.post<Filme>('http://localhost:3000/filme', filme);

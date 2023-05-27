@@ -1,6 +1,13 @@
+
+
+
 <button mat-button *ngIf="lista" (click)="listar()">lista</button>
 
-<div *ngFor="let cliente of listaFilmes">
-  <p>{{cliente.id}}</p>
-  <p>{{cliente.title_filme}}</p>
+<div *ngFor="let filme of listaFilmes">
+  <p>{{filme.id}}</p>
+  <p>{{filme.title_filme}}</p>
+  <img src="{{filme.url_filme}}" alt="">
+  <p>{{filme.categoria}}</p>
+  <p>{{filme.ano_filme}}</p>
+  <p>{{filme.descricao}}</p>
 </div>
