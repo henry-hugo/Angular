@@ -23,13 +23,6 @@ export class FilmeComponent {
   }
 
 
-  adicionar(){
-    this.filmeService.inserir(this.adicionarFilme).subscribe(filmes=>{
-      this.listar();
-    });
-  }
-
-
   excluir(id: number){
     this.filmeService.excluir(id).subscribe(filmes=>{
       this.listar();

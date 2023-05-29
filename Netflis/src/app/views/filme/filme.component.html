@@ -3,7 +3,7 @@
 
 <button mat-button *ngIf="lista" (click)="listar()">lista</button>
 
-<div *ngFor="let filme of listaFilmes">
+<div  *ngFor="let filme of listaFilmes">
   <p>{{filme.id}}</p>
   <p>{{filme.title_filme}}</p>
   <img src="{{filme.url_filme}}" alt="">

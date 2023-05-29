@@ -1,0 +1,27 @@
+<div>
+<mat-form-field class="d-block">
+  <mat-label>Title filme</mat-label>
+  <input matInput matNativeControl:text [(ngModel)]="adicionarFilme.title_filme" placeholder>
+</mat-form-field>
+<mat-form-field class="d-block">
+  <mat-label>URL Imagem</mat-label>
+  <input matInput matNativeControl:text [(ngModel)]="adicionarFilme.url_filme">
+</mat-form-field>
+<mat-form-field class="d-block">
+  <mat-label>Categorias</mat-label>
+  <mat-select [(ngModel)]="adicionarFilme.categoria" >
+    <mat-option *ngFor="let categoria of categorias" [value]="categoria.value">
+      {{categoria.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-form-field class="d-block">
+  <mat-label>Ano de lançamento</mat-label>
+  <input matInput matNativeControl:number [(ngModel)]="adicionarFilme.ano_filme" min="0" max="9999" placeholder>
+</mat-form-field>
+<mat-form-field class="d-block">
+  <mat-label>Descrição</mat-label>
+  <textarea matNativeControl [(ngModel)]="adicionarFilme.descricao" ></textarea>
+</mat-form-field>
+<button mat-button (click)="adicionar()">Salvar filme</button>
+</div>

@@ -15,11 +15,14 @@ import {MatTableModule} from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
 import { FilmeComponent } from './views/filme/filme.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { AdicionarComponent } from './views/adicionar/adicionar.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
 @NgModule({
   declarations: [
     AppComponent,
     FilmeComponent,
+    AdicionarComponent,
   ],
   imports: [
      BrowserModule,
@@ -34,7 +37,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatButtonModule,
     MatTableModule,
-    MatInputModule
+    MatInputModule,
+    MatFormFieldModule,
+    MatSelectModule
 
   ],
   providers: [],
