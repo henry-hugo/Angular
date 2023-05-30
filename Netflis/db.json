@@ -4,23 +4,23 @@
       "id": 1,
       "title_filme": "pokemon",
       "url_filme": "https://resizing.flixster.com/7bv93So5faxblhe0295LYmzQnzw=/300x300/v2/https://flxt.tmsimg.com/assets/p24225_v_v10_ae.jpg ",
-      "categoria": " ",
+      "categoria": "filme",
       "ano_filme": 1998,
-      "descricao": " "
+      "descricao": " ele n fica velho "
     },
     {
       "id": 2,
-      "title_filme": " teste",
-      "url_filme": " ",
-      "categoria": " ",
-      "ano_filme": 0,
-      "descricao": " "
+      "title_filme": "pokemon2",
+      "url_filme": "https://cloud10.todocoleccion.online/postales-dibujos-y-caricaturas/tc/2016/10/17/13/62863912.jpg",
+      "categoria": "filme",
+      "ano_filme": "1999",
+      "descricao": " ele n fica velho"
     },
     {
       "id": 3,
-      "title_filme": " teste",
-      "url_filme": " teste.jpg",
-      "categoria": "volvo",
+      "title_filme": " ",
+      "url_filme": " ",
+      "categoria": " ",
       "ano_filme": 0,
       "descricao": " "
     },
@@ -36,24 +36,24 @@
       "id": 5,
       "title_filme": " ",
       "url_filme": " ",
-      "categoria": "drama-2",
+      "categoria": " ",
       "ano_filme": 0,
       "descricao": " "
     },
     {
       "id": 6,
-      "title_filme": " pokemon",
-      "url_filme": " https://cdn.shopify.com/s/files/1/1416/8662/products/Pokemon_the_first_movie_1999_original_film_art_2000x.jpg?v=1572208868",
-      "categoria": "acao",
-      "ano_filme": "1999",
-      "descricao": " pokemon ele nunca fica velho "
+      "title_filme": " ",
+      "url_filme": " ",
+      "categoria": " ",
+      "ano_filme": 0,
+      "descricao": " "
     },
     {
       "id": 7,
       "title_filme": " ",
       "url_filme": " ",
       "categoria": " ",
-      "ano_filme": "9999",
+      "ano_filme": 0,
       "descricao": " "
     },
     {
@@ -61,7 +61,7 @@
       "title_filme": " ",
       "url_filme": " ",
       "categoria": " ",
-      "ano_filme": "99999",
+      "ano_filme": 0,
       "descricao": " "
     },
     {
@@ -71,6 +71,100 @@
       "categoria": " ",
       "ano_filme": 0,
       "descricao": " "
+    },
+    {
+      "id": 10,
+      "title_filme": " ",
+      "url_filme": " ",
+      "categoria": " ",
+      "ano_filme": 0,
+      "descricao": " "
+    },
+    {
+      "id": 11,
+      "title_filme": " ",
+      "url_filme": " ",
+      "categoria": " ",
+      "ano_filme": 0,
+      "descricao": " "
+    },
+    {
+      "id": 12,
+      "title_filme": " ",
+      "url_filme": " ",
+      "categoria": " ",
+      "ano_filme": 0,
+      "descricao": " "
+    },
+    {
+      "id": 13,
+      "title_filme": " ",
+      "url_filme": " ",
+      "categoria": " ",
+      "ano_filme": 0,
+      "descricao": " "
+    },
+    {
+      "id": 14,
+      "title_filme": " ",
+      "url_filme": " ",
+      "categoria": " ",
+      "ano_filme": 0,
+      "descricao": " "
+    },
+    {
+      "id": 15,
+      "title_filme": " ",
+      "url_filme": " ",
+      "categoria": " ",
+      "ano_filme": 0,
+      "descricao": " "
+    },
+    {
+      "id": 16,
+      "title_filme": " ",
+      "url_filme": " ",
+      "categoria": " ",
+      "ano_filme": 0,
+      "descricao": " "
+    },
+    {
+      "id": 17,
+      "title_filme": " ",
+      "url_filme": " ",
+      "categoria": " ",
+      "ano_filme": 0,
+      "descricao": " "
+    },
+    {
+      "id": 18,
+      "title_filme": " ",
+      "url_filme": " ",
+      "categoria": " ",
+      "ano_filme": 0,
+      "descricao": " "
+    },
+    {
+      "id": 19,
+      "title_filme": " ",
+      "url_filme": " ",
+      "categoria": " ",
+      "ano_filme": 0,
+      "descricao": " "
+    }
+  ],
+  "categoria": [
+    {
+      "id": 1,
+      "nome_categoria": "filme"
+    },
+    {
+      "id": 2,
+      "nome_categoria": "serie"
+    },
+    {
+      "id": 3,
+      "nome_categoria": "Documentario"
     }
   ]
 }

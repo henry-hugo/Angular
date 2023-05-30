@@ -13,7 +13,9 @@ export class FilmeComponent {
   listaFilmes: Filme[] = [];
   adicionarFilme = new Filme();
 
-
+  ngOnInit() {
+    this.listar();
+  }
 
   listar(){
     this.filmeService.listar().subscribe(filmes=>{

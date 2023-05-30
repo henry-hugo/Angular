@@ -1,13 +1,17 @@
+<mat-card-content style="display:flex; padding: 2rem;   flex-wrap: wrap">
+  <mat-card style="padding: 1rem;" *ngFor="let filme of listaFilmes">
 
+    <img src="{{filme.url_filme}}" alt="" mat-card-lg-image>
+    <mat-card-title>{{filme.title_filme}} </mat-card-title>
+    <mat-card-subtitle>{{filme.categoria}}</mat-card-subtitle>
+    <mat-card-subtitle>{{filme.descricao}}</mat-card-subtitle>
+    <mat-card-subtitle>{{filme.ano_filme}}</mat-card-subtitle>
+    <button mat-icon-button>
+      <mat-icon>delete</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon>edit</mat-icon>
+    </button>
 
-
-<button mat-button *ngIf="lista" (click)="listar()">lista</button>
-
-<div  *ngFor="let filme of listaFilmes">
-  <p>{{filme.id}}</p>
-  <p>{{filme.title_filme}}</p>
-  <img src="{{filme.url_filme}}" alt="">
-  <p>{{filme.categoria}}</p>
-  <p>{{filme.ano_filme}}</p>
-  <p>{{filme.descricao}}</p>
-</div>
+  </mat-card>
+</mat-card-content>

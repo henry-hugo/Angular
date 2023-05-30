@@ -1,7 +1,7 @@
 <div>
 <mat-form-field class="d-block">
   <mat-label>Title filme</mat-label>
-  <input matInput matNativeControl:text [(ngModel)]="adicionarFilme.title_filme" placeholder>
+  <input matInput matNativeControl:text [(ngModel)]="adicionarFilme.title_filme">
 </mat-form-field>
 <mat-form-field class="d-block">
   <mat-label>URL Imagem</mat-label>
@@ -9,9 +9,9 @@
 </mat-form-field>
 <mat-form-field class="d-block">
   <mat-label>Categorias</mat-label>
-  <mat-select [(ngModel)]="adicionarFilme.categoria" >
-    <mat-option *ngFor="let categoria of categorias" [value]="categoria.value">
-      {{categoria.viewValue}}
+  <mat-select name="categoria"  [(ngModel)]="adicionarFilme.categoria">
+    <mat-option *ngFor="let categoria of listaCategoria" value="{{categoria.nome_categoria}}">
+      {{categoria.nome_categoria}}
     </mat-option>
   </mat-select>
 </mat-form-field>
