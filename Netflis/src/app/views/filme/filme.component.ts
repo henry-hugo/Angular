@@ -22,6 +22,8 @@ export class FilmeComponent {
   adicionarFilme = new Filme();
   input = false;
 
+  nome = '';
+
   ngOnInit() {
     this.listar();
     this.listarC();
@@ -69,6 +71,13 @@ export class FilmeComponent {
 
   listarCategoria(categoria: String){
     this.filmeService.listarCategoria(categoria).subscribe(filmes=>{
+      this.listaFilmes = filmes ;
+      this.lista = false;
+    });
+  }
+
+  filtro(){
+    this.filmeService.filtro(this.nome).subscribe(filmes=>{
       this.listaFilmes = filmes ;
       this.lista = false;
     });
