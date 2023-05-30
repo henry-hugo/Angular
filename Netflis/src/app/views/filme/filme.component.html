@@ -1,3 +1,14 @@
+<div>
+  <button mat-button (click)="listar()">Todos</button>
+  <button mat-button (click)="listarCategoria('filme')" > Filme</button>
+  <button mat-button (click)="listarCategoria('serie')" >Serie</button>
+  <button mat-button (click)="listarCategoria('documentario')" >Documentario</button>
+  <label for="">pesquise</label>
+  <input type="search" name="">
+
+</div>
+
+
 <mat-card-content *ngIf="input == true">
   <div>
     <mat-form-field class="d-block">

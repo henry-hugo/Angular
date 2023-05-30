@@ -7,7 +7,9 @@ import { CategoriaService } from './service/categoria.service';
 const routes: Routes = [
   {path:'listar',component: FilmeComponent},
   {path:'adicionarProduto',component: AdicionarComponent},
-  {path:'adicionarCategoria',component:CategoriaService}
+  {path:'adicionarCategoria',component:CategoriaService},
+  {path:'filme',component:FilmeComponent},
+
 
 ];
 

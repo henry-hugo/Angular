@@ -26,6 +26,15 @@
       "ano_filme": "2023",
       "descricao": "livre para família",
       "genero": "infantis"
+    },
+    {
+      "id": 4,
+      "title_filme": "Loki",
+      "url_filme": "https://1.bp.blogspot.com/-Hck9OI0exPY/YOxNxbSQMUI/AAAAAAACOwk/Jh9QRD3_qHQ_NdVA6TvNWJSz_P466Vm1QCLcBGAsYHQ/s0/B7177393-C734-4FBE-B9C1-291BF9033A55.jpeg",
+      "categoria": "serie",
+      "ano_filme": "2021",
+      "descricao": "Loki,deus da trapaça.",
+      "genero": "ação"
     }
   ],
   "categoria": [

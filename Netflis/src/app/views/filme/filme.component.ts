@@ -15,7 +15,8 @@ export class FilmeComponent {
   constructor (private filmeService: FilmeService, private  categoriaService: CategoriaService, private generoService: GeneroService){}
 
   listaCategoria: Categoria[] = [];
-  listaGenero: Genero[] = [];lista = true;
+  listaGenero: Genero[] = [];
+  lista = true;
 
   listaFilmes: Filme[] = [];
   adicionarFilme = new Filme();
@@ -63,6 +64,13 @@ export class FilmeComponent {
   listarG(){
     this.generoService.listar().subscribe(genero=>{
       this.listaGenero = genero ;
+    });
+  }
+
+  listarCategoria(categoria: String){
+    this.filmeService.listarCategoria(categoria).subscribe(filmes=>{
+      this.listaFilmes = filmes ;
+      this.lista = false;
     });
   }
 

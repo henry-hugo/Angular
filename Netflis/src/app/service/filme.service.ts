@@ -11,6 +11,9 @@ export class FilmeService {
   listar(): Observable <Filme[]>{
     return this.http.get<Filme[]>('http://localhost:3000/filme');
   }
+  listarCategoria(categoria: String): Observable <Filme[]>{
+    return this.http.get<Filme[]>(`http://localhost:3000/filme?categoria=${categoria}`);
+  }
   inserir(filme: Filme){
     return this.http.post<Filme>('http://localhost:3000/filme', filme);
   }

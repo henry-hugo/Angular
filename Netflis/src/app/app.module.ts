@@ -22,7 +22,7 @@ import {MatSelectModule} from '@angular/material/select';
   declarations: [
     AppComponent,
     FilmeComponent,
-    AdicionarComponent,
+    AdicionarComponent
   ],
   imports: [
      BrowserModule,
