@@ -2,155 +2,30 @@
   "filme": [
     {
       "id": 1,
-      "title_filme": "pokemon",
+      "title_filme": "Pokemon",
       "url_filme": "https://resizing.flixster.com/7bv93So5faxblhe0295LYmzQnzw=/300x300/v2/https://flxt.tmsimg.com/assets/p24225_v_v10_ae.jpg ",
       "categoria": "filme",
       "ano_filme": 1998,
-      "descricao": " ele n fica velho "
+      "descricao": " ele n fica velho ",
+      "genero": "infantis"
     },
     {
       "id": 2,
-      "title_filme": "pokemon2",
+      "title_filme": "Pokemon 2",
       "url_filme": "https://cloud10.todocoleccion.online/postales-dibujos-y-caricaturas/tc/2016/10/17/13/62863912.jpg",
       "categoria": "filme",
       "ano_filme": "1999",
-      "descricao": " ele n fica velho"
+      "descricao": " ele n fica velho",
+      "genero": "infantis"
     },
     {
       "id": 3,
-      "title_filme": " ",
-      "url_filme": " ",
-      "categoria": " ",
-      "ano_filme": 0,
-      "descricao": " "
-    },
-    {
-      "id": 4,
-      "title_filme": " ",
-      "url_filme": " ",
-      "categoria": " ",
-      "ano_filme": 0,
-      "descricao": " "
-    },
-    {
-      "id": 5,
-      "title_filme": " ",
-      "url_filme": " ",
-      "categoria": " ",
-      "ano_filme": 0,
-      "descricao": " "
-    },
-    {
-      "id": 6,
-      "title_filme": " ",
-      "url_filme": " ",
-      "categoria": " ",
-      "ano_filme": 0,
-      "descricao": " "
-    },
-    {
-      "id": 7,
-      "title_filme": " ",
-      "url_filme": " ",
-      "categoria": " ",
-      "ano_filme": 0,
-      "descricao": " "
-    },
-    {
-      "id": 8,
-      "title_filme": " ",
-      "url_filme": " ",
-      "categoria": " ",
-      "ano_filme": 0,
-      "descricao": " "
-    },
-    {
-      "id": 9,
-      "title_filme": " ",
-      "url_filme": " ",
-      "categoria": " ",
-      "ano_filme": 0,
-      "descricao": " "
-    },
-    {
-      "id": 10,
-      "title_filme": " ",
-      "url_filme": " ",
-      "categoria": " ",
-      "ano_filme": 0,
-      "descricao": " "
-    },
-    {
-      "id": 11,
-      "title_filme": " ",
-      "url_filme": " ",
-      "categoria": " ",
-      "ano_filme": 0,
-      "descricao": " "
-    },
-    {
-      "id": 12,
-      "title_filme": " ",
-      "url_filme": " ",
-      "categoria": " ",
-      "ano_filme": 0,
-      "descricao": " "
-    },
-    {
-      "id": 13,
-      "title_filme": " ",
-      "url_filme": " ",
-      "categoria": " ",
-      "ano_filme": 0,
-      "descricao": " "
-    },
-    {
-      "id": 14,
-      "title_filme": " ",
-      "url_filme": " ",
-      "categoria": " ",
-      "ano_filme": 0,
-      "descricao": " "
-    },
-    {
-      "id": 15,
-      "title_filme": " ",
-      "url_filme": " ",
-      "categoria": " ",
-      "ano_filme": 0,
-      "descricao": " "
-    },
-    {
-      "id": 16,
-      "title_filme": " ",
-      "url_filme": " ",
-      "categoria": " ",
-      "ano_filme": 0,
-      "descricao": " "
-    },
-    {
-      "id": 17,
-      "title_filme": " ",
-      "url_filme": " ",
-      "categoria": " ",
-      "ano_filme": 0,
-      "descricao": " "
-    },
-    {
-      "id": 18,
-      "title_filme": " ",
-      "url_filme": " ",
-      "categoria": " ",
-      "ano_filme": 0,
-      "descricao": " "
-    },
-    {
-      "id": 19,
-      "title_filme": " ",
-      "url_filme": " ",
-      "categoria": " ",
-      "ano_filme": 0,
-      "descricao": " "
+      "title_filme": "Mario Bros",
+      "url_filme": "https://http2.mlstatic.com/D_NQ_NP_2X_800837-MLB69450136245_052023-F.webp",
+      "categoria": "filme",
+      "ano_filme": "2023",
+      "descricao": "livre para família",
+      "genero": "infantis"
     }
   ],
   "categoria": [
@@ -165,6 +40,20 @@
     {
       "id": 3,
       "nome_categoria": "Documentario"
+    }
+  ],
+  "genero": [
+    {
+      "id": 1,
+      "nome_genero": "ação"
+    },
+    {
+      "id": 2,
+      "nome_genero": "comédia"
+    },
+    {
+      "id": 3,
+      "nome_genero": "infantis"
     }
   ]
 }

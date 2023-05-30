@@ -16,6 +16,15 @@
   </mat-select>
 </mat-form-field>
 <mat-form-field class="d-block">
+  <mat-label>Generos</mat-label>
+  <mat-select name="genero"  [(ngModel)]="adicionarFilme.genero">
+    <mat-option *ngFor="let genero of listaGenero" value="{{genero.nome_genero}}">
+      {{genero.nome_genero}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field class="d-block">
   <mat-label>Ano de lançamento</mat-label>
   <input matInput matNativeControl:number [(ngModel)]="adicionarFilme.ano_filme" min="0" max="9999" placeholder>
 </mat-form-field>
@@ -23,5 +32,8 @@
   <mat-label>Descrição</mat-label>
   <textarea matNativeControl [(ngModel)]="adicionarFilme.descricao" ></textarea>
 </mat-form-field>
-<button mat-button (click)="adicionar()">Salvar filme</button>
+<button mat-button (click)="adicionar()">
+  <mat-icon> add_shopping_cart</mat-icon>
+  Adicionar
+</button>
 </div>

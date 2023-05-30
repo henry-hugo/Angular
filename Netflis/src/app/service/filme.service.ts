@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Filme} from '../model/filme';
+import {Filme} from '../model/Filme';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 @Injectable({

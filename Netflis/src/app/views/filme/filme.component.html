@@ -1,17 +1,70 @@
-<mat-card-content style="display:flex; padding: 2rem;   flex-wrap: wrap">
+<mat-card-content *ngIf="input == true">
+  <div>
+    <mat-form-field class="d-block">
+      <mat-label>Title filme</mat-label>
+      <input matInput matNativeControl:text [(ngModel)]="adicionarFilme.title_filme">
+    </mat-form-field>
+    <mat-form-field class="d-block">
+      <mat-label>URL Imagem</mat-label>
+      <input matInput matNativeControl:text [(ngModel)]="adicionarFilme.url_filme">
+    </mat-form-field>
+    <mat-form-field class="d-block">
+      <mat-label>Categorias</mat-label>
+      <mat-select name="categoria"  [(ngModel)]="adicionarFilme.categoria">
+        <mat-option *ngFor="let categoria of listaCategoria" value="{{categoria.nome_categoria}}">
+          {{categoria.nome_categoria}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="d-block">
+      <mat-label>Generos</mat-label>
+      <mat-select name="genero"  [(ngModel)]="adicionarFilme.genero">
+        <mat-option *ngFor="let genero of listaGenero" value="{{genero.nome_genero}}">
+          {{genero.nome_genero}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="d-block">
+      <mat-label>Ano de lançamento</mat-label>
+      <input matInput matNativeControl:number [(ngModel)]="adicionarFilme.ano_filme" min="0" max="9999" placeholder>
+    </mat-form-field>
+    <mat-form-field class="d-block">
+      <mat-label>Descrição</mat-label>
+      <textarea matNativeControl [(ngModel)]="adicionarFilme.descricao" ></textarea>
+    </mat-form-field>
+    <button mat-button (click)="editar()">
+      <mat-icon> donut_small</mat-icon>
+      Atualizar
+    </button>
+    </div>
+</mat-card-content>
+
+
+
+
+
+
+
+<mat-card-content *ngIf="input == false"  style="display:flex; padding: 2rem;   flex-wrap: wrap">
   <mat-card style="padding: 1rem;" *ngFor="let filme of listaFilmes">
 
     <img src="{{filme.url_filme}}" alt="" mat-card-lg-image>
     <mat-card-title>{{filme.title_filme}} </mat-card-title>
-    <mat-card-subtitle>{{filme.categoria}}</mat-card-subtitle>
+    <mat-card-subtitle>{{filme.genero}}</mat-card-subtitle>
     <mat-card-subtitle>{{filme.descricao}}</mat-card-subtitle>
     <mat-card-subtitle>{{filme.ano_filme}}</mat-card-subtitle>
-    <button mat-icon-button>
-      <mat-icon>delete</mat-icon>
-    </button>
-    <button mat-icon-button>
-      <mat-icon>edit</mat-icon>
-    </button>
-
+    <div style="display: inline;">
+      <button mat-icon-button (click)="excluir(filme.id)">
+        <mat-icon>delete_outline</mat-icon>
+      </button>
+      <button mat-icon-button (click)="inputEditar(filme)" >
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon>play_for_work</mat-icon>
+      </button>
+    </div>
   </mat-card>
 </mat-card-content>
+
