@@ -67,6 +67,14 @@
     {
       "id": 3,
       "nome_categoria": "Documentario"
+    },
+    {
+      "id": 4,
+      "nome_categoria": "teste"
+    },
+    {
+      "id": 5,
+      "nome_categoria": "teste2"
     }
   ],
   "genero": [

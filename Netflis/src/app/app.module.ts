@@ -18,11 +18,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AdicionarComponent } from './views/adicionar/adicionar.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
+import { CategoriaComponent } from './views/categoria/categoria.component';
 @NgModule({
   declarations: [
     AppComponent,
     FilmeComponent,
-    AdicionarComponent
+    AdicionarComponent,
+    CategoriaComponent
   ],
   imports: [
      BrowserModule,

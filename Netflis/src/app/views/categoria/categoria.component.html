@@ -1,0 +1,19 @@
+<div *ngIf="newCategoria == true">
+  <mat-form-field class="d-block">
+    <mat-label>nome</mat-label>
+    <textarea matNativeControl [(ngModel)]="adicionarCategoria.nome_categoria" ></textarea>
+  </mat-form-field>
+  <button mat-button (click)="adicionar()">
+    <mat-icon> add_shopping_cart</mat-icon>
+    Adicionar
+  </button>
+</div>
+<div *ngIf="newCategoria== false">
+  <button (click)="categoriaNew()">Adicionar uma nova Categoria</button>
+</div>
+<div>
+  <mat-option *ngFor="let categoria of listaCategoria" value="{{categoria.nome_categoria}}">
+    {{categoria.nome_categoria}}
+  </mat-option>
+</div>
+
