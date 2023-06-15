@@ -15,9 +15,23 @@ export class CategoriaComponent {
   adicionado = false;
   newCategoria = false;
   listaCategoria: Categoria[] = [];
+  input = false;
+
+  inputEditar(categoria:Categoria){
+    this.adicionarCategoria = categoria;
+    this.input = true;
+  }
+
+  editar(){
+    this.categoriaService.atualizar(this.adicionarCategoria).subscribe(categoria=>{
+      this.input = false;
+    this.listar();
+  });
+}
 
   adicionar(){
     this.categoriaService.inserir(this.adicionarCategoria).subscribe(categorias=>{
+      this.listar();
     return this.newCategoria = false;
     });
   }
@@ -38,6 +52,12 @@ export class CategoriaComponent {
       this.newCategoria = false;
     }
 
+  }
+
+  excluir(id: number){
+    this.categoriaService.excluir(id).subscribe(categoria=>{
+      this.listar();
+    });
   }
 
 }

@@ -53,16 +53,21 @@
       "ano_filme": "2023",
       "descricao": "livre",
       "genero": "ação"
+    },
+    {
+      "id": 7,
+      "title_filme": "Aniraaaa",
+      "url_filme": "https://chatadegalocha.com/wp-content/uploads/2018/11/7-750x500.jpg",
+      "categoria": "Documentario",
+      "ano_filme": "2020",
+      "descricao": "Vida de Anitta.",
+      "genero": "drama"
     }
   ],
   "categoria": [
     {
-      "id": 1,
-      "nome_categoria": "filme"
-    },
-    {
       "id": 2,
-      "nome_categoria": "serie"
+      "nome_categoria": "Serie"
     },
     {
       "id": 3,
@@ -70,11 +75,7 @@
     },
     {
       "id": 4,
-      "nome_categoria": "teste"
-    },
-    {
-      "id": 5,
-      "nome_categoria": "teste2"
+      "nome_categoria": "Filme"
     }
   ],
   "genero": [

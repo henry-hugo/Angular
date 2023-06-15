@@ -1,4 +1,15 @@
-<div>
+<div *ngIf="mensagem == true">
+  <mat-card>
+    <h3>adicionado com sucesso</h3>
+    <button mat-button (click)="mensagens()">Adicionar um novo</button>
+    <button mat-button routerLink="/listar">Ver produtos</button>
+
+  </mat-card>
+</div>
+
+
+
+<div *ngIf="mensagem == false">
 <mat-form-field class="d-block">
   <mat-label>Title filme</mat-label>
   <input matInput matNativeControl:text [(ngModel)]="adicionarFilme.title_filme">

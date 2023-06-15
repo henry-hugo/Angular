@@ -3,7 +3,7 @@ export class Filme{
   title_filme =  "";
   url_filme= "";
   categoria ="";
-  ano_filme= 0;
+  ano_filme= 2023;
   descricao = "";
   genero = "";
 }

@@ -9,11 +9,31 @@
   </button>
 </div>
 <div *ngIf="newCategoria== false">
-  <button (click)="categoriaNew()">Adicionar uma nova Categoria</button>
+  <button mat-button color="primary" (click)="categoriaNew()">Adicionar uma nova Categoria</button>
 </div>
 <div>
-  <mat-option *ngFor="let categoria of listaCategoria" value="{{categoria.nome_categoria}}">
-    {{categoria.nome_categoria}}
-  </mat-option>
+  <h1>Categoria</h1>
+  <mat-list role="list" *ngFor="let categoria of listaCategoria">
+    <mat-list-item role="listitem">
+      {{categoria.nome_categoria}}
+      <button mat-icon-button (click)="excluir(categoria.id)">
+        <mat-icon>delete_outline</mat-icon>
+      </button>
+      <button mat-icon-button (click)="inputEditar(categoria)">
+        <mat-icon>edit</mat-icon>
+      </button>
+    </mat-list-item>
+  </mat-list>
+</div>
+<div *ngIf="input == true">
+  <h2>Atualizar</h2>
+  <mat-form-field class="d-block">
+    <mat-label>Nome</mat-label>
+    <input matInput matNativeControl:text [(ngModel)]="adicionarCategoria.nome_categoria">
+  </mat-form-field>
+  <button mat-button (click)="editar()">
+      <mat-icon> donut_small</mat-icon>
+      Atualizar
+    </button>
 </div>
 

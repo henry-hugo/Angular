@@ -30,6 +30,7 @@ export class FilmeComponent {
     this.listarG();
   }
 
+
   listar(){
     this.filmeService.listar().subscribe(filmes=>{
       this.listaFilmes = filmes ;

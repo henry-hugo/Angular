@@ -3,9 +3,7 @@
   <button mat-button (click)="listarCategoria('filme')" > Filme</button>
   <button mat-button (click)="listarCategoria('serie')" >Serie</button>
   <button mat-button (click)="listarCategoria('Documentario')" >Documentario</button>
-  <input matInput  type="search" [(ngModel)]="nome">
-  <button mat-button (click)="filtro()" ><mat-icon>search</mat-icon></button>
-
+  <input style="float: right;" matInput (keyup)="filtro()" type="search" [(ngModel)]="nome" placeholder="search">
 </div>
 
 

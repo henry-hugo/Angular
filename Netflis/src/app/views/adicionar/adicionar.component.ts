@@ -20,10 +20,19 @@ export class AdicionarComponent {
 
   adicionarFilme = new Filme();
   adicionado = false;
+  mensagem = false;
+  input = false;
+
+
+
+  mensagens(){
+    this.mensagem = false;
+  }
 
   adicionar(){
     this.filmeService.inserir(this.adicionarFilme).subscribe(filmes=>{
-    return this.adicionado = true;
+      this.mensagem = true;
+      return this.adicionado = true;
     });
   }
 
