@@ -7,6 +7,9 @@
     <mat-icon> add_shopping_cart</mat-icon>
     Adicionar
   </button>
+  <button mat-button (click)="fechar()">
+    <mat-icon> clear</mat-icon>
+  </button>
 </div>
 <div *ngIf="newCategoria== false">
   <button mat-button color="primary" (click)="categoriaNew()">Adicionar uma nova Categoria</button>
@@ -34,6 +37,9 @@
   <button mat-button (click)="editar()">
       <mat-icon> donut_small</mat-icon>
       Atualizar
-    </button>
+  </button>
+  <button mat-button (click)="fechar()">
+    <mat-icon> clear</mat-icon>
+  </button>
 </div>
 

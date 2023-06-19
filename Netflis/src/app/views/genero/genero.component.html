@@ -1,0 +1,47 @@
+<div *ngIf="newGenero == true">
+    <mat-form-field class="d-block">
+      <mat-label>nome</mat-label>
+      <textarea matNativeControl [(ngModel)]="adicionarGenero.nome_genero"></textarea>
+    </mat-form-field>
+    <button mat-button (click)="adicionar()">
+      <mat-icon>add_shopping_cart</mat-icon>
+      Adicionar
+    </button>
+    <button mat-button (click)="fechar()">
+      <mat-icon>clear</mat-icon>
+    </button>
+  </div>
+  <div *ngIf="newGenero == false">
+    <button mat-button color="primary" (click)="generoNew()">Adicionar uma nova Categoria</button>
+  </div>
+  <div>
+    <h1>Categoria</h1>
+    <mat-list role="list" *ngFor="let genero of listarGenero">
+      <mat-list-item role="listitem">
+        {{ genero.nome_genero }}
+        <button mat-icon-button (click)="excluir(genero.id)">
+          <mat-icon>delete_outline</mat-icon>
+        </button>
+        <button mat-icon-button (click)="inputEditar(genero)">
+          <mat-icon>edit</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-list>
+  </div>
+  <div *ngIf="input == true">
+    <h2>Atualizar</h2>
+    <mat-form-field class="d-block">
+      <mat-label>Nome</mat-label>
+      <input matInput [(ngModel)]="adicionarGenero.nome_genero">
+    </mat-form-field>
+    <button mat-button (click)="editar()">
+      <mat-icon>donut_small</mat-icon>
+      Atualizar
+    </button>
+    <button mat-button (click)="fechar()">
+      <mat-icon>clear</mat-icon>
+    </button>
+  </div>
+  
+  
+  

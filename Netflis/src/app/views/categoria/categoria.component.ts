@@ -11,7 +11,7 @@ export class CategoriaComponent {
 
   constructor(private categoriaService: CategoriaService) {}
 
-  adicionarCategoria = new Categoria;
+  adicionarCategoria = new Categoria();
   adicionado = false;
   newCategoria = false;
   listaCategoria: Categoria[] = [];
@@ -25,6 +25,7 @@ export class CategoriaComponent {
   editar(){
     this.categoriaService.atualizar(this.adicionarCategoria).subscribe(categoria=>{
       this.input = false;
+      this.adicionarCategoria = new Categoria();
     this.listar();
   });
 }
@@ -32,6 +33,7 @@ export class CategoriaComponent {
   adicionar(){
     this.categoriaService.inserir(this.adicionarCategoria).subscribe(categorias=>{
       this.listar();
+      this.adicionarCategoria = new Categoria();
     return this.newCategoria = false;
     });
   }
@@ -58,6 +60,10 @@ export class CategoriaComponent {
     this.categoriaService.excluir(id).subscribe(categoria=>{
       this.listar();
     });
+  }
+  fechar(){
+    this.input = false;
+    this.newCategoria =false;
   }
 
 }

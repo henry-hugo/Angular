@@ -56,7 +56,7 @@
     },
     {
       "id": 7,
-      "title_filme": "Aniraaaa",
+      "title_filme": "Anitaaaa",
       "url_filme": "https://chatadegalocha.com/wp-content/uploads/2018/11/7-750x500.jpg",
       "categoria": "Documentario",
       "ano_filme": "2020",
@@ -75,7 +75,7 @@
     },
     {
       "id": 4,
-      "nome_categoria": "Filme"
+      "nome_categoria": "Filme\n"
     }
   ],
   "genero": [
@@ -90,10 +90,6 @@
     {
       "id": 3,
       "nome_genero": "infantis"
-    },
-    {
-      "id": 4,
-      "nome_genero": "drama"
     }
   ]
 }

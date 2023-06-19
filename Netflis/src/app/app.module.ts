@@ -19,12 +19,14 @@ import { AdicionarComponent } from './views/adicionar/adicionar.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { CategoriaComponent } from './views/categoria/categoria.component';
+import { GeneroComponent } from './views/genero/genero.component';
 @NgModule({
   declarations: [
     AppComponent,
     FilmeComponent,
     AdicionarComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    GeneroComponent
   ],
   imports: [
      BrowserModule,
