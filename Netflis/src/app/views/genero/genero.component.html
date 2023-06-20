@@ -12,10 +12,10 @@
     </button>
   </div>
   <div *ngIf="newGenero == false">
-    <button mat-button color="primary" (click)="generoNew()">Adicionar uma nova Categoria</button>
+    <button mat-button color="primary" (click)="generoNew()">Adicionar uma nova Genero</button>
   </div>
   <div>
-    <h1>Categoria</h1>
+    <h1>Genero</h1>
     <mat-list role="list" *ngFor="let genero of listarGenero">
       <mat-list-item role="listitem">
         {{ genero.nome_genero }}

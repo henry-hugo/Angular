@@ -19,7 +19,7 @@
     </mat-form-field>
     <mat-form-field class="d-block">
       <mat-label>Categorias</mat-label>
-      <mat-select name="categoria"  [(ngModel)]="adicionarFilme.categoria">
+      <mat-select name="categoria" [(ngModel)]="adicionarFilme.categoria">
         <mat-option *ngFor="let categoria of listaCategoria" value="{{categoria.nome_categoria}}">
           {{categoria.nome_categoria}}
         </mat-option>
@@ -27,7 +27,7 @@
     </mat-form-field>
     <mat-form-field class="d-block">
       <mat-label>Generos</mat-label>
-      <mat-select name="genero"  [(ngModel)]="adicionarFilme.genero">
+      <mat-select name="genero" [(ngModel)]="adicionarFilme.genero">
         <mat-option *ngFor="let genero of listaGenero" value="{{genero.nome_genero}}">
           {{genero.nome_genero}}
         </mat-option>
@@ -40,14 +40,15 @@
     </mat-form-field>
     <mat-form-field class="d-block">
       <mat-label>Descrição</mat-label>
-      <textarea matNativeControl [(ngModel)]="adicionarFilme.descricao" ></textarea>
+      <input matInput matNativeControl:text [(ngModel)]="adicionarFilme.descricao" maxlength="14">
     </mat-form-field>
     <button mat-button (click)="editar()">
-      <mat-icon> donut_small</mat-icon>
+      <mat-icon>donut_small</mat-icon>
       Atualizar
     </button>
-    </div>
+  </div>
 </mat-card-content>
+
 
 
 
